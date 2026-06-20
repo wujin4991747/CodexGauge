@@ -7,6 +7,8 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green?color=34C759&labelColor=black&style=flat-square" /></a>
   <a><img src="https://img.shields.io/badge/platform-macOS%2014%2B-lightgrey?color=7F77DD&labelColor=black&style=flat-square&logo=apple" /></a>
   <br /><br />
+  <img src="https://github.com/user-attachments/assets/610794086-13de080e-7ce6-4804-a97b-7f5c7986a4cd" alt="CodexGauge Screenshot" width="320" />
+  <br /><br />
 </div>
 
 > Track how much of your Codex quota remains — with a dashboard-style gauge that looks as good as it works. Red, yellow, green. One glance is all it takes.
