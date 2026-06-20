@@ -14,7 +14,13 @@
 
 > Track how much of your Codex quota remains — with a dashboard-style gauge that looks as good as it works. Red, yellow, green. One glance is all it takes.
 
-## 📦 Installation
+<p align="center">
+  <strong>CodexGauge</strong> 是一款精致的 macOS 仪表盘应用，将你的 Codex CLI API 额度可视化为一枚优雅的弧形表盘。<br/>
+  红 · 黄 · 绿三色渐变，指针一挥，额度多少一目了然。<br/>
+  专为中国大陆用户优化：自动识别 Clash / Surge 系统代理，开箱即用。
+</p>
+
+## 📦 安装
 
 | Platform | Method | Link |
 | :--- | :--- | :--- |
