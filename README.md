@@ -7,7 +7,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green?color=34C759&labelColor=black&style=flat-square" /></a>
   <a><img src="https://img.shields.io/badge/platform-macOS%2014%2B-lightgrey?color=7F77DD&labelColor=black&style=flat-square&logo=apple" /></a>
   <br /><br />
-  <img src="https://github.com/user-attachments/assets/610794086-13de080e-7ce6-4804-a97b-7f5c7986a4cd" alt="CodexGauge Screenshot" width="320" />
+  <img src="https://github.com/user-attachments/assets/a6ae819b-cc0a-44d9-8c55-81d2481faff4" alt="CodexGauge Screenshot" width="300" />
   <br /><br />
 </div>
 
@@ -64,6 +64,8 @@ codex login
 ### At-a-Glance Dashboard
 
 A 270-degree arc gauge with a needle that swings to your current usage. Red when critical, yellow when warming, green when full. Rendered on the GPU via SwiftUI Canvas.
+
+![Dashboard](https://github.com/user-attachments/assets/a6ae819b-cc0a-44d9-8c55-81d2481faff4)
 
 ### Smart Proxy Detection
 
