@@ -1,0 +1,24 @@
+# Xcode
+DerivedData/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+*.xcworkspace/xcshareddata/swiftpm/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcshareddata/
+
+# macOS
+.DS_Store
+Thumbs.db
+
+# Build outputs
+build/
+release/
+*.app
+*.dmg
+*.zip
+
+# Python
+__pycache__/
+*.pyc
