@@ -2,9 +2,6 @@
   <h3>🎛️ CodexGauge</h3>
   <p><em>Your Codex API usage, visualized as a beautiful dashboard gauge.</em></p>
 
-  <img src="https://your-screenshot-url.png" alt="CodexGauge Screenshot" width="340" />
-  <br /><br />
-
   <a href="https://github.com/wujin4991747/CodexGauge/stargazers"><img src="https://img.shields.io/github/stars/wujin4991747/CodexGauge?color=ffcb47&labelColor=black&style=flat-square&logo=github&label=Stars" /></a>
   <a href="https://github.com/wujin4991747/CodexGauge/releases"><img src="https://img.shields.io/github/downloads/wujin4991747/CodexGauge/total?color=369eff&labelColor=black&logo=github&style=flat-square&label=Downloads" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green?color=34C759&labelColor=black&style=flat-square" /></a>
@@ -65,8 +62,6 @@ codex login
 ### At-a-Glance Dashboard
 
 A 270-degree arc gauge with a needle that swings to your current usage. Red when critical, yellow when warming, green when full. Rendered on the GPU via SwiftUI Canvas.
-
-![Dashboard](https://your-screenshot-url.png)
 
 ### Smart Proxy Detection
 
