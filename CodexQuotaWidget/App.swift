@@ -138,6 +138,10 @@ struct ContentView: View {
                 .padding(.top, 6)
             }
 
+            // 6-hour countdown
+            SixHourCountdownView()
+                .padding(.top, 4)
+
             Spacer(minLength: 6)
 
             // ── Proxy settings (collapsible) ──
@@ -338,5 +342,56 @@ struct ProxySettingsView: View {
             return "Proxy: \(p.host):\(p.port)"
         }
         return "No proxy"
+    }
+}
+
+// MARK: - 6-Hour Countdown
+
+struct SixHourCountdownView: View {
+    @State private var now = Date()
+
+    private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+
+    private var nextBoundary: Date {
+        let calendar = Calendar.current
+        let hour = calendar.component(.hour, from: now)
+        let boundaryHour = ((hour / 6) + 1) * 6
+        var components = calendar.dateComponents([.year, .month, .day], from: now)
+        components.hour = boundaryHour % 24
+        components.minute = 0
+        components.second = 0
+        var next = calendar.date(from: components) ?? now
+        if boundaryHour >= 24 {
+            next = calendar.date(byAdding: .day, value: 1, to: next) ?? next
+        }
+        if next <= now, boundaryHour < 24 {
+            next = calendar.date(byAdding: .day, value: 1, to: next) ?? next
+        }
+        return next
+    }
+
+    private var remaining: TimeInterval {
+        max(0, nextBoundary.timeIntervalSince(now))
+    }
+
+    private var display: String {
+        let hrs = Int(remaining) / 3600
+        let mins = (Int(remaining) % 3600) / 60
+        let secs = Int(remaining) % 60
+        return String(format: "%02d:%02d:%02d", hrs, mins, secs)
+    }
+
+    var body: some View {
+        HStack(spacing: 4) {
+            Image(systemName: "hourglass")
+                .font(.system(size: 9))
+                .foregroundStyle(.tertiary)
+            Text("Next cycle: \(display)")
+                .font(.system(size: 10, weight: .medium, design: .monospaced))
+                .foregroundStyle(.tertiary)
+        }
+        .onReceive(timer) { input in
+            now = input
+        }
     }
 }

@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04B2F16C0769429C3EB60FA7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699B6C1C62FDB8A53DB4ED6B /* SystemConfiguration.framework */; };
+		09CABE376FC778EAC3D6B53F /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44E2A59F4775F33B31A5506 /* GaugeView.swift */; };
+		1F2A0A6F408B1663117E8144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34BCE4FBCC8C853348CCBD1E /* Assets.xcassets */; };
+		44E81D5D6D6A4F83CB42C501 /* QuotaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A302F9189EBFE6D1EC74F7 /* QuotaData.swift */; };
+		4A631FE1FE87F6B832EC0B70 /* codex_fetch.py in Resources */ = {isa = PBXBuildFile; fileRef = F11EE52D629B078EC328A851 /* codex_fetch.py */; };
+		81A8627D1A93CA09088F6892 /* QuotaFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72342C4999519006781520C /* QuotaFetcher.swift */; };
+		DE9AE6DB0470D9A6A85B4418 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF121E1ACCD3DA2D3E44746 /* App.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		34BCE4FBCC8C853348CCBD1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DF121E1ACCD3DA2D3E44746 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		651DC54D0BD93C2C34182E9F /* CodexQuotaWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CodexQuotaWidget.entitlements; sourceTree = "<group>"; };
+		699B6C1C62FDB8A53DB4ED6B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6B0E90D0C61BEBC3A6BB1232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A44E2A59F4775F33B31A5506 /* GaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeView.swift; sourceTree = "<group>"; };
+		D259C10FC3CBA8BF64C9F73A /* CodexGauge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodexGauge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8A302F9189EBFE6D1EC74F7 /* QuotaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotaData.swift; sourceTree = "<group>"; };
+		F11EE52D629B078EC328A851 /* codex_fetch.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = codex_fetch.py; sourceTree = "<group>"; };
+		F72342C4999519006781520C /* QuotaFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotaFetcher.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7349B41CA5E64167285169C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B2F16C0769429C3EB60FA7 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08ECE5CF37401BB47722078F = {
+			isa = PBXGroup;
+			children = (
+				4BBD60BD1542D56D85FE365A /* CodexQuotaWidget */,
+				7C35EA2FAA56FD68012F85B0 /* Frameworks */,
+				E4B1B8E4AE18B61E8B3DDE03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4BBD60BD1542D56D85FE365A /* CodexQuotaWidget */ = {
+			isa = PBXGroup;
+			children = (
+				3DF121E1ACCD3DA2D3E44746 /* App.swift */,
+				34BCE4FBCC8C853348CCBD1E /* Assets.xcassets */,
+				F11EE52D629B078EC328A851 /* codex_fetch.py */,
+				651DC54D0BD93C2C34182E9F /* CodexQuotaWidget.entitlements */,
+				A44E2A59F4775F33B31A5506 /* GaugeView.swift */,
+				6B0E90D0C61BEBC3A6BB1232 /* Info.plist */,
+				E8A302F9189EBFE6D1EC74F7 /* QuotaData.swift */,
+				F72342C4999519006781520C /* QuotaFetcher.swift */,
+			);
+			path = CodexQuotaWidget;
+			sourceTree = "<group>";
+		};
+		7C35EA2FAA56FD68012F85B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				699B6C1C62FDB8A53DB4ED6B /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4B1B8E4AE18B61E8B3DDE03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D259C10FC3CBA8BF64C9F73A /* CodexGauge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE0845C72F51345273CBD8F3 /* CodexGauge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77C8DE5BEFF4FCC4ED941682 /* Build configuration list for PBXNativeTarget "CodexGauge" */;
+			buildPhases = (
+				B2D4983DE6CBB76BCD247EFC /* Sources */,
+				6C2AB5F0DF10F2B4A4A9F349 /* Resources */,
+				7349B41CA5E64167285169C6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodexGauge;
+			packageProductDependencies = (
+			);
+			productName = CodexGauge;
+			productReference = D259C10FC3CBA8BF64C9F73A /* CodexGauge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B937B378E97D0F74025DB23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 48E00940658A23C50D01DDE2 /* Build configuration list for PBXProject "CodexGauge" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 08ECE5CF37401BB47722078F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E4B1B8E4AE18B61E8B3DDE03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE0845C72F51345273CBD8F3 /* CodexGauge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C2AB5F0DF10F2B4A4A9F349 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2A0A6F408B1663117E8144 /* Assets.xcassets in Resources */,
+				4A631FE1FE87F6B832EC0B70 /* codex_fetch.py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2D4983DE6CBB76BCD247EFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE9AE6DB0470D9A6A85B4418 /* App.swift in Sources */,
+				09CABE376FC778EAC3D6B53F /* GaugeView.swift in Sources */,
+				44E81D5D6D6A4F83CB42C501 /* QuotaData.swift in Sources */,
+				81A8627D1A93CA09088F6892 /* QuotaFetcher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9BAF0B1EC0ADF9C167E3C7CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		D0F4BE59A47CDA2BBEC48981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		D94C45C67F32F3240CBF02A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = CodexQuotaWidget/CodexQuotaWidget.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CodexQuotaWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codex-gauge";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DAF29FC2CB33813545FA7611 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = CodexQuotaWidget/CodexQuotaWidget.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CodexQuotaWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codex-gauge";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48E00940658A23C50D01DDE2 /* Build configuration list for PBXProject "CodexGauge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BAF0B1EC0ADF9C167E3C7CD /* Debug */,
+				D0F4BE59A47CDA2BBEC48981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		77C8DE5BEFF4FCC4ED941682 /* Build configuration list for PBXNativeTarget "CodexGauge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D94C45C67F32F3240CBF02A6 /* Debug */,
+				DAF29FC2CB33813545FA7611 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B937B378E97D0F74025DB23 /* Project object */;
+}
